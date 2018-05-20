@@ -1,0 +1,10 @@
+postgres:
+    image: postgres:9.6
+    volumes:
+        - /var/lib/postgres
+    environment:
+        POSTGRES_DB: project
+        POSTGRES_USER: project
+        POSTGRES_PASSWORD: project
+    ports:
+        - "5432:5432"
